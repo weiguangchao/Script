@@ -27,6 +27,7 @@ const jcqdSignUrl = ($.isNode() ? process.env.jcqdSignUrl : $.getdata('jcqdSignU
       "❌ Cookie或Sign Url为空",
       "http://boxjs.com"
     );
+    return;
   }
   var name = $.getdata("evil_checkincktitle");
   if (name == undefined || name == "") {
